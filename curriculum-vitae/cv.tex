@@ -1,0 +1,289 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.75in,right=0.75in,bottom=0.75in]{geometry} % Document margins
+
+% Add links
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{
+    colorlinks = true,
+    urlcolor   = darkblue,
+    linkcolor  = black
+}
+
+\newcommand{\note}[1]{\begin{color}{red}{#1}\end{color}}
+
+\usepackage{eurosym} % For the euro symbol
+
+% Numbers on each page
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+\renewcommand\headrulewidth{0pt} % Removes funny header line
+
+\name{Georgios D. Karachalias} % Your name
+
+\begin{document}
+
+% TODO: Use \hspace*{\fill} instead of \dotfill if you are not satisfied with the result
+Date of Birth: \hspace*{\fill} November 25, 1989 \\
+Nationality:   \hspace*{\fill} Greek \\
+E-mail:        \hspace*{\fill} \href{mailto:gdkaracha@gmail.com}
+                                    {gdkaracha@gmail.com} \\
+Webpage:       \hspace*{\fill} \href{http://gkaracha.github.io/}
+                                    {http://gkaracha.github.io/} \\[-5mm]
+%}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf \href{http://www.kuleuven.be/english}{KU Leuven}} \hfill {\em 2014 - 2018} \\ %\note{2018}} \\ % present
+PhD in Programming Languages \\
+Advisor: Prof. Tom Schrijvers
+
+{\bf \href{http://www.ntua.gr}{National Technical University of Athens}} \hfill {\em 2007 - 2013} \\
+5-Year Diploma in Electrical and Computer Engineering (GPA: 8.06/10.00) \\
+Diploma Thesis Advisor: Associate Prof. Nikolaos S. Papaspyrou
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%       RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Interests}
+Programming Languages' Design and Implementation, Type Systems, Formal
+Verification, Compilers, Mathematical Logic, Functional Programming
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%       WORK EXPERIENCE/OPEN SOURCE CONTRIBUTIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Open Source Contributions}
+%------------------------------------------------
+
+\rStudent{Glasgow Haskell Compiler (GHC)}{2013 - 2016}{Developer}{}
+
+For more contributions, see my github page: \href{https://github.com/gkaracha}{https://github.com/gkaracha}
+
+%------------------------------------------------
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%       PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Publications}
+%------------------------------------------------
+
+{\bf \href{https://people.cs.kuleuven.be/~george.karachalias/papers/skeletons.pdf}
+          {Explicit Effect Subtyping}},
+Amr Hany Saleh, Georgios Karachalias, Matija Pretnar, and Tom Schrijvers, In ESOP 2018.
+
+{\bf \href{https://people.cs.kuleuven.be/~george.karachalias/papers/fundeps.pdf}
+          {Elaboration on Functional Dependencies: Functional Dependencies Are Dead, Long Live Functional Dependencies!}},
+Georgios Karachalias and Tom Schrijvers, In Haskell 2017.
+
+{\bf \href{https://people.cs.kuleuven.be/~george.karachalias/papers/quantcs.pdf}
+          {Quantified Class Constraints}},
+Gert-Jan Bottu, Georgios Karachalias, Tom Schrijvers, Bruno C. d. S. Oliveira,
+and Philip Wadler, In Haskell 2017.
+
+{\bf \href{http://people.cs.kuleuven.be/~george.karachalias/papers/p424-karachalias.pdf}
+          {GADTs Meet Their Match}},
+Georgios Karachalias, Tom Schrijvers, Dimitrios Vytiniotis, and Simon Peyton
+Jones, In ICFP 2015.
+
+{\bf \href{https://dspace.lib.ntua.gr/dspace2/bitstream/handle/123456789/38413/karachaliasg_exhaustiveness.pdf?sequence=1}
+          {Pattern Matching Exhaustiveness for GADTs}} (Master Thesis),
+Georgios Karachalias, {\em National Technical University of Athens, Greece, 2014}.
+
+{\bf \href{http://people.cs.kuleuven.be/~george.karachalias/papers/floyd-warshall.pdf}
+          {Parallelizing the Floyd-Warshall Algorithm on Modern Multicore Platforms: Lessons Learned}},
+Students of the Parallel Processing Systems course,
+School of Electrical \& Computer Engineering,
+National Technical University of Athens, In SFHMMY 2012.
+
+%------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%       TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Teaching Experience (KU Leuven)}
+%------------------------------------------------
+
+\begin{rSubsection}{Declarative Languages}{2014 - 2018}{}{} % present
+\item Lab assistant for the Declarative Languages course of KU Leuven (Haskell
+and Prolog). Design of exercises, exams and Haskell programming advice in the
+laboratory.
+\end{rSubsection}
+
+%------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%       STUDENTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Students}
+
+%------------------------------------------------
+
+\rStudent{Koen Pauwels -- ``Bidirectional Type Class Instances''}{2017 - 2018}{MSc Thesis Supervisor}{KU Leuven, Belgium}
+
+%------------------------------------------------
+
+\rStudent{Michiel Derhaeg -- ``Implementation of Functional Dependencies''}{2017 - 2018}{MSc Thesis Supervisor}{KU Leuven, Belgium}
+
+%------------------------------------------------
+
+\rStudent{Gert-Jan Bottu -- ``Quantified Class Constraints in Haskell''}{2016 - 2017}{MSc Thesis Supervisor}{KU Leuven, Belgium}
+
+%------------------------------------------------
+
+\rStudent{Gert-Jan Bottu -- ``E-Systant''}{2015 - 2016}{Project Supervisor}{KU Leuven, Belgium}
+
+%------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%       INVITED TALKS AND TECHNICAL PRESENTATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research Community Service}
+%------------------------------------------------
+
+% TODO: MAKE A NEW ENVIRONMENT FOR THIS SORT OF THING??
+\smallskip\smallskip
+\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+ \itemsep -0.5em \vspace{-0.5em}       % Compress items in list together for aesthetics
+
+\item Member of the Artifact Evaluation Committee of ICFP 2017.
+
+\item Member of the organizing committee of IFL 2016.
+
+\item Subreviewer for ICLP'17, ESOP'17, ICFP'16, FLOPS'16, PADL'16, ML'16, PPDP'16, PPDP'15, MPC'15.
+
+\item Student volunteer for ICFP'15.
+
+\end{list}
+
+%------------------------------------------------
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%       FUNDING
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Grants, Honours, and Awards} %{Funding}
+%------------------------------------------------
+
+\smallskip\smallskip
+\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+ %\itemsep -0.5em \vspace{-0.5em}       % Compress items in list together for aesthetics
+
+\item Travel Grant for a Short Stay Abroad (University of Pennsylvania): 1188\euro ~\& travel expenses\\
+      FWO K210316N, March 9, 2016.
+
+\item ACM SIGPLAN/PLMW 16 (Donor Funded): \$1,020.00\\
+      Student Travel Support for Programming Languages Mentoring Workshop
+      and the Symposium on Principles of Programming Languages (POPL'16), November 17, 2015.
+\end{list}
+
+%------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+%------------------------------------------------
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Haskell (expert), ML/OCaml, Python, Prolog, Erlang, C\#, C, Java \\
+Applications \& Tools & \LaTeX, \textsc{MS Visual Studio}, Eclipse \\
+Operating Systems     & Linux, Microsoft Windows, OS X \\
+\end{tabular}
+
+%------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%       LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Languages}
+%------------------------------------------------
+\smallskip\smallskip
+\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+ \itemsep -0.5em \vspace{-0.5em}       % Compress items in list together for aesthetics
+
+\item {\bf English} (professional working proficiency)
+
+%\note{
+%\item {\bf Spanish} (elementary proficiency)
+%}
+
+\item {\bf Greek}   (native proficiency)
+
+\end{list}
+%------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%       GENERAL INTERESTS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{General Interests}
+%------------------------------------------------
+Painting, Literature, Programming, Music, Woodwork, Gardening
+%------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
